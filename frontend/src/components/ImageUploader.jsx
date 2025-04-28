@@ -6,7 +6,7 @@ function ImageUploader({ onUpload }) {
   const handleChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-      setPreview(URL.createObjectURL(file));
+      // setPreview(URL.createObjectURL(file));
       onUpload(file);
     }
   };
